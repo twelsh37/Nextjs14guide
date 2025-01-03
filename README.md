@@ -1,4 +1,4 @@
-<code style "color:red">THIS IS NOT THE FINISHED COPY</code>
+<h1 align="center" style="font-size: 3em;"><strong>Not The Finished Article</strong></h1
 
 # Comprehensive Next.js 14 Development Guide
 
