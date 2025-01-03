@@ -1,3 +1,5 @@
+<code style "color:red">THIS IS NOT THE FINISHED COPY</code>
+
 # Comprehensive Next.js 14 Development Guide
 
 Welcome to our comprehensive guide for building Next.js 14 applications! This guide will walk you through setting up and building production-ready applications using Next.js, TypeScript, and our recommended tech stack. We'll cover everything from initial setup to advanced patterns and best practices.
