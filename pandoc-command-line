@@ -1,0 +1,11 @@
+# Here's what each part of the command does:
+# - `pandoc` - The base command to run the Pandoc document converter
+# - `"Filename.docx"` - The input file (in this case, a Microsoft Word document)
+# - `-f docx` - Specifies the input format (`-f` stands for "from"). Here it's set to Microsoft Word's DOCX format
+# - `-t gfm` - Specifies the output format (`-t` stands for "to"). GFM means GitHub-Flavored Markdown
+# - `--wrap=none` - Disables text wrapping in the output. Without this, Pandoc might insert line breaks at a certain column width
+# - `--lua-filter=table-to-gfm.lua` - Applies a custom Lua script that processes and transforms the content during conversion. In this case, it's handling table formatting
+# - `-o Filename-out.md` - Specifies the output file (`-o` stands for "output"). The result will be written to this Markdown file
+
+# Run the command in your terminal or command prompt, replacing "Filename.docx" with the name of your input file:
+pandoc "Filename.docx" -f docx -t gfm --wrap=none --lua-filter=table-to-gfm.lua -o Filename-out.md
