@@ -1,10 +1,10 @@
-The guide provides a comprehensive framework for building modern, production-ready web applications using Next.js 14 and its ecosystem.  
-  
+The guide provides a comprehensive framework for building modern, production-ready web applications using Next.js 14 and its ecosystem.
+
 It outlines a carefully selected technology stack that includes TypeScript for type safety  
 Shadcn for UI components,  
 Clerk for authentication,  
-and Drizzle ORM for database management.  
-  
+and Drizzle ORM for database management.
+
 The guide emphasizes a server-first approach while maintaining optimal client-side performance.
 
 Tom Welsh
@@ -323,13 +323,13 @@ We’ve carefully chosen each of these packages:
 
 - `@clerk/nextjs`: Provides authentication and user management. We chose Clerk over alternatives like NextAuth because it’s more feature-complete and provides a better developer experience
 - `shadcn`: A component library that gives us high-quality, customizable UI components without the overhead of a full UI framework
-- `drizzle-orm` *+* `@vercel/postgres`: Our database stack. Drizzle ORM is lightweight and type-safe, and pairs well with Vercel’s Postgres offering
+- `drizzle-orm` _+_ `@vercel/postgres`: Our database stack. Drizzle ORM is lightweight and type-safe, and pairs well with Vercel’s Postgres offering
 - `lucide-react`: A clean, consistent icon set that integrates well with our tech stack
 - `zod`: For runtime type validation - crucial for handling user input and API responses safely
 - `next-safe-action`: Provides type-safe server actions, reducing the chance of runtime errors
 - `@sentry/nextjs`: For error tracking and monitoring in production
-- `pino`*,* `pino-pretty`*,* `winston`: A robust logging setup. Pino for performance, winston for flexibility
-- `@vercel/analytics`*,* `@vercel/speed-insights`: Built-in analytics and performance monitoring from Vercel
+- `pino`_,_ `pino-pretty`_,_ `winston`: A robust logging setup. Pino for performance, winston for flexibility
+- `@vercel/analytics`_,_ `@vercel/speed-insights`: Built-in analytics and performance monitoring from Vercel
 
 We will now install our dev dependencies:
 
@@ -351,10 +351,10 @@ yarn add -D @types/node typescript @types/react @types/react-dom eslint drizzle-
 
 These are our development tools:
 
-- *TypeScript type definitions (*`@types/*`*)*: Essential for TypeScript development
+- _TypeScript type definitions (_`@types/*`_)_: Essential for TypeScript development
 - `drizzle-kit`: CLI tools for database migrations and management
 - `pg`: PostgreSQL client for local development
-- *Testing setup*: We’ve chosen Jest and React Testing Library for their excellent React support and wide community adoption
+- _Testing setup_: We’ve chosen Jest and React Testing Library for their excellent React support and wide community adoption
 
 Each choice here is deliberate and forms part of a cohesive development stack. We’re prioritising:
 
@@ -374,9 +374,9 @@ Before we get into Environment Variables we need to talk about .gitignore and Pr
 
 ##### Understanding .gitignore and Project Security
 
-Think of `.``gitignore` as your project’s security guard - it tells Git which files and directories should never be tracked or uploaded to your repository. This is absolutely critical for several reasons, but especially for keeping your secrets secret!
+Think of ` .``gitignore ` as your project’s security guard - it tells Git which files and directories should never be tracked or uploaded to your repository. This is absolutely critical for several reasons, but especially for keeping your secrets secret!
 
-Here’s what a robust `.``ignore` for a Next.js project should look like:
+Here’s what a robust ` .``ignore ` for a Next.js project should look like:
 
 <table>
 <colgroup>
@@ -641,7 +641,7 @@ declare namespace NodeJS {
 </tbody>
 </table>
 
-##### Environment Variable Validation: 
+##### Environment Variable Validation:
 
 Here is a very detailed break down on this important subject.
 
@@ -828,7 +828,7 @@ Remember:
 - Use secret flags for sensitive data
 - Document your environment setup
 
-# 
+#
 
 # 3.0 Project Structure
 
@@ -868,7 +868,7 @@ Let me explain our project structure and the thinking behind it. This structure 
 
 Let’s break down each major directory and why it’s organized this way:
 
-### 3.1.1 app/ 
+### 3.1.1 app/
 
 <table>
 <colgroup>
@@ -892,7 +892,7 @@ This is the heart of your Next.js application. We’re using the App Router, whi
 - `(auth)/` uses route groups (note the parentheses) to organize authentication-required pages. This is a Next.js 14 feature that lets us group routes without affecting the URL structure
 - `error.tsx` at the root handles application-wide errors
 
-### 3.1.2 components/ 
+### 3.1.2 components/
 
 <table>
 <colgroup>
@@ -939,7 +939,7 @@ This is your utilities and configuration hub. We’ve split it into:
 - `db/` for database-related code (Drizzle configurations, etc.)
 - `utils/` for shared helper functions
 - `api/` for API-related utilities like fetch wrappers
-- 
+-
 
 ### 3.1.4 Support Directories
 
@@ -1597,12 +1597,12 @@ This error handling pattern is particularly useful in Next.js applications becau
 
 Shadcn is really easy to setup and install components The setup commands are just the beginning - they set up the base configuration and add a few essential components. From there, you can add more components as needed, keeping your bundle size minimal by only including what you use.
 
-### Initialise Shadcn 
+### Initialise Shadcn
 
-| `npx`` shadcn@latest init` |
-|----------------------------|
+| ` npx`` shadcn@latest init ` |
+| ---------------------------- |
 
-### Add components* *
+### Add components\* \*
 
 <table>
 <colgroup>
@@ -2176,7 +2176,7 @@ export default async function ProductList() {
 </tbody>
 </table>
 
-- 
+-
 
 ### `Use Client Components for Interactivity`
 
